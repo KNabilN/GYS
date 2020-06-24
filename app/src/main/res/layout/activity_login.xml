@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Registration.LoginActivity"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="100dp"
+    >
+
+    <TextView
+        android:layout_weight=".8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="دخول"
+        android:textColor="@color/mainColor"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_height="30dp"
+        android:src="@drawable/help"
+        android:onClick="quesign"/>
+</LinearLayout>
+
+<EditText
+    android:id="@+id/phoneeditli"
+    android:inputType="number"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="رقم الهاتف"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+
+    android:textColor="@color/mainColor"
+
+    android:gravity="center"
+
+    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+    android:drawablePadding="5dp"
+    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+    android:textSize="24dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="8dp"/>
+<EditText
+    android:id="@+id/passeditli"
+    android:inputType="textPassword"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="كلمة المرور"
+    android:textColor="@color/mainColor"
+
+    android:gravity="center"
+    android:layout_margin="16dp"
+    android:drawableLeft="@drawable/ic_lock_black_24dp"
+    android:drawablePadding="5dp"
+    android:drawableStart="@drawable/ic_lock_black_24dp"
+    android:textSize="24dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="8dp"/>
+
+<Button
+    android:id="@+id/loginbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="دخول"
+    android:textColor="#ffffff"
+    android:textAllCaps="false"
+    android:background="@drawable/button"
+    android:layout_margin="24dp"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/facebook"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    >
+
+    <TextView
+        android:onClick="nota"
+        android:layout_width="0dp"
+        android:layout_weight=".95"
+        android:layout_height="wrap_content"
+        android:text="@string/usingface"
+        android:textSize="14dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/google"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="16dp"
+    >
+
+    <TextView
+        android:onClick="nota"
+        android:layout_width="0dp"
+        android:layout_weight=".95"
+        android:layout_height="wrap_content"
+        android:text="@string/usinggoogle"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/signup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="مستخدم جديد؟ تسجيل"
+    android:textSize="14dp"
+    android:layout_marginTop="24dp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp"
+    android:layout_gravity="center"
+    android:gravity="center"/>
+
+
+
+</LinearLayout>
+</ScrollView>
+    <!--<ScrollView-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@drawable/background"-->
+
+    <!--    >-->
+    <!--    <LinearLayout-->
+
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:context=".Main2Activity"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        >-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="200dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:src="@drawable/logo1"-->
+    <!--            android:layout_marginBottom="32dp"/>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:onClick="quesign"-->
+    <!--                android:src="@drawable/ques"/>-->
+    <!--            <EditText-->
+    <!--                -->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="60dp"-->
+    <!--                android:layout_margin="18dp"-->
+    <!--                android:background="@drawable/edittext"-->
+    <!--                android:ems="10"-->
+    <!--                android:gravity="center"-->
+    <!--                android:hint="your phone"-->
+    <!--                android:inputType="phone"-->
+    <!--                android:textColor="#9630f5"-->
+    <!--                android:textColorHint="#9630f5"-->
+    <!--                android:textSize="20sp"-->
+    <!--                tools:layout_editor_absoluteX="84dp"-->
+    <!--                tools:layout_editor_absoluteY="160dp" />-->
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:onClick="quesign"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:src="@drawable/ques"/>-->
+    <!--            <EditText-->
+    <!--                -->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="60dp"-->
+    <!--                android:textColor="#9630f5"-->
+    <!--                android:textColorHint="#9630f5"-->
+    <!--                android:layout_marginLeft="18dp"-->
+    <!--                android:layout_marginRight="18dp"-->
+
+    <!--                android:background="@drawable/edittext"-->
+    <!--                android:gravity="center"-->
+    <!--                android:ems="10"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:hint="password"-->
+    <!--                android:inputType="textPassword"-->
+    <!--                tools:layout_editor_absoluteX="84dp"-->
+    <!--                tools:layout_editor_absoluteY="160dp" />-->
+    <!--        </LinearLayout>-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="18dp"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/forget"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentLeft="true"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:text="Forgot your password?"-->
+
+    <!--                tools:layout_editor_absoluteX="46dp"-->
+    <!--                tools:layout_editor_absoluteY="307dp" />-->
+
+    <!--            <TextView-->
+    <!--                -->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentEnd="true"-->
+
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_gravity="right"-->
+    <!--                android:gravity="right"-->
+    <!--                android:text="Sign up"-->
+    <!--                tools:layout_editor_absoluteX="240dp"-->
+    <!--                tools:layout_editor_absoluteY="307dp"-->
+    <!--                android:layout_alignParentRight="true" />-->
+    <!--        </RelativeLayout>-->
+
+    <!--        <Button-->
+    <!--            -->
+    <!--            android:layout_margin="8dp"-->
+
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Log in"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:background="@drawable/button"-->
+    <!--            tools:layout_editor_absoluteX="148dp"-->
+    <!--            tools:layout_editor_absoluteY="401dp" />-->
+    <!--    </LinearLayout>-->
+    <!--</ScrollView>-->

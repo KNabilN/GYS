@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddPlaces"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddPlaces">
+
+        <TextView
+            android:id="@+id/addplacesgovname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Place"
+            android:textSize="24sp"
+            android:layout_marginTop="27dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/place_new_image"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/addplacesgovname"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            />
+        <EditText
+            android:id="@+id/place_new_name"
+            android:layout_width="match_parent"
+            android:hint="name"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_new_image"
+            android:layout_margin="15dp"
+
+            android:inputType="textMultiLine"
+            />
+        <EditText
+            android:id="@+id/place_new_desc"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:hint="desc"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_new_name"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:inputType="textMultiLine"
+            />
+        <EditText
+            android:id="@+id/place_new_price"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:hint="price"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_new_desc"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:inputType="textMultiLine"
+            />
+        <Button
+            android:id="@+id/place_create"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:layout_below="@id/place_new_price"
+            android:layout_centerInParent="true"
+            android:text="Create"/>
+    </RelativeLayout>
+</ScrollView>
+

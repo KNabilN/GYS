@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Prices"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/lang_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+            android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/txt_lang_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="اختيار طريقة الاشتراك"
+            android:textColor="#610CB1"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="8dp"
+            android:background="#610CB1" />
+
+
+        <TextView
+            android:id="@+id/sub_txt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="اشتراك شهري"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/button"/>
+            <LinearLayout
+                android:id="@+id/sub_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@drawable/back">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:id="@+id/sub_det"
+                    android:text="سيمكنك من خلال هذا الاختيار شراء أماكن مختلفة من محافظات مختلفة كيفما شئت.. لمدة أسبوع واحد من تاريخ التأكيد"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    />
+                <Button
+                    android:onClick="home"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="التالي"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="@color/fui_transparent"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/places_txt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="شراء أماكن"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/buy_places_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/back">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/places_det"
+
+                android:text="سيمكنك من خلال هذا الاختيار شراء أماكن مختلفة من محافظات مختلفة كيفما شئت.. لمدة أسبوع واحد من تاريخ التأكيد"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:padding="8dp"
+                />
+            <Button
+                android:onClick="home"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="التالي"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/fui_transparent"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/trip_txt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="رحلة"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/trip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/back"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trip_det"
+                android:text="سيمكنك من خلال هذا الاختيار تكوين رحلة من عدة أماكن داخل محافظة واحدة لمدة يوم واحد من تاريخ التأكيد"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:padding="8dp"
+                />
+            <Button
+                android:onClick="home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="التالي"
+                android:textSize="18sp"
+                android:background="@color/fui_transparent"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="8dp"
+            android:background="#610CB1"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            tools:context=".LanguageActivity"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Subscription Type"
+                android:textColor="#610CB1"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ImageView
+
+               android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ques" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="8dp"
+                android:background="#610CB1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="إشتراك شهري"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#610CB1"/>
+
+            <ImageView
+
+                android:id="@+id/month_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ques" />
+            <Button
+                android:id="@+id/sign_sub"
+
+                android:onClick="home"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:text="Next"
+                android:background="@drawable/button"
+                android:textColor="#ffffff"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="شراء أماكن"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#610CB1"/>
+
+            <ImageView
+
+                android:id="@+id/places_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ques" />
+            <Button
+                android:id="@+id/sign_places"
+                android:onClick="home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="24dp"
+                android:text="Next"
+                android:background="@drawable/button"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        <Button
+            android:onClick="signout"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خروج"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+</ScrollView>
+

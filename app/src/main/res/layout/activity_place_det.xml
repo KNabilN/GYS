@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+
+            android:layout_marginBottom="8dp"
+            >
+
+            <ImageView
+                android:onClick="back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/arrow_back"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sign_place_det"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ques"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/det_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/det_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/det_image"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="Product Name"
+                android:textAlignment="center"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/det_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/det_name"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="8dp"
+            android:text="Product Description"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/add_place_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/det_name"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="8dp"
+            android:text="أضف على أماكنك"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signbox"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/translator_btn_box"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/translator_rate_box"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/facebook"
+                android:text="شراء"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/translator_rate_box"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tranlator_country_box"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/starts" />
+
+            <ImageView
+                android:id="@+id/translator_image_box"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/karimsign" />
+
+
+            <TextView
+                android:id="@+id/translator_name_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/translator_image_box"
+                android:layout_marginLeft="18dp"
+                android:text="Karim Nabil"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tranlator_country_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/translator_name_box"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:text="Cairo, Egypt"
+                android:textColor="@color/grey"
+                android:textSize="14dp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tranlator_pricing_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/translator_image_box"
+                android:layout_marginLeft="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:text="50 pound/day"
+                android:textColor="@color/grey"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/det_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/det_description"
+            android:layout_margin="8dp"
+            android:text="Product Price"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

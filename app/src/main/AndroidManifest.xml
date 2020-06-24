@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gys.android.gys">
+
+    <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Search"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".AR.ArFirstActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".PlaceDetActivity" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Prices" />
+        <activity android:name=".Admin.AddPlaces" />
+        <activity android:name=".Admin.Admin" />
+        <activity android:name=".LanguageActivity" />
+        <activity android:name=".SignLang.QuesLang" />
+        <activity android:name=".Registration.SignupActivity" />
+        <activity android:name=".Registration.LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>
